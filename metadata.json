@@ -1,0 +1,12 @@
+{
+  "name": "Remix Magic-honor-camera-pro",
+  "description": "Imported from GitHub: edisoneisntein/Magic-honor-camera-pro",
+  "requestFramePermissions": [
+    "camera",
+    "microphone",
+    "geolocation"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

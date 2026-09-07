@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- ========================================================= -->
+    <!-- CAMERA                                                     -->
+    <!-- ========================================================= -->
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <!-- Cámara como requisito principal de la aplicación -->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <!-- Autofocus es deseable, pero no imprescindible -->
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <!-- ========================================================= -->
+    <!-- CAMERA2 / PRO CAPABILITIES                                 -->
+    <!-- ========================================================= -->
+
+    <!--
+        RAW y controles manuales se detectan dinámicamente mediante
+        CameraCharacteristics.
+
+        No los marcamos como required=true porque eso impediría
+        instalar la aplicación en dispositivos que no soporten
+        alguna de estas capacidades.
+    -->
+
+    <uses-feature
+        android:name="android.hardware.camera.raw"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.camera.manual_sensor"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.camera.manual_post_processing"
+        android:required="false" />
+
+    <!-- ========================================================= -->
+    <!-- APPLICATION                                                 -->
+    <!-- ========================================================= -->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@android:drawable/ic_menu_camera"
+        android:label="Prometheus Native Camera"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+
+        <!-- ===================================================== -->
+        <!-- MAIN ACTIVITY                                          -->
+        <!-- ===================================================== -->
+
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+    </application>
+
+</manifest>

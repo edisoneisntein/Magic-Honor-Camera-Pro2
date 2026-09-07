@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" width="192" height="192">
+  <defs>
+    <linearGradient id="bg192" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141414" />
+      <stop offset="100%" stop-color="#020202" />
+    </linearGradient>
+    <linearGradient id="accent192" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFB340" />
+      <stop offset="100%" stop-color="#FF9500" />
+    </linearGradient>
+    <radialGradient id="lens192" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#0a192f" />
+      <stop offset="60%" stop-color="#050d18" />
+      <stop offset="100%" stop-color="#000000" />
+    </radialGradient>
+  </defs>
+
+  <rect width="192" height="192" rx="42" fill="url(#bg192)" stroke="#333333" stroke-width="4" />
+  <circle cx="96" cy="96" r="66" fill="none" stroke="#FF9500" stroke-width="5" />
+  <circle cx="96" cy="96" r="58" fill="url(#lens192)" stroke="#222222" stroke-width="3" />
+  <circle cx="96" cy="96" r="26" fill="#040b14" stroke="#ff0055" stroke-width="1" stroke-opacity="0.6" />
+  <circle cx="96" cy="96" r="12" fill="url(#accent192)" />
+  <ellipse cx="84" cy="80" rx="16" ry="9" transform="rotate(-35 84 80)" fill="#ffffff" fill-opacity="0.25" />
+</svg>

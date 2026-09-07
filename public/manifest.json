@@ -1,0 +1,49 @@
+{
+  "name": "Magic Camera Pro - HONOR Magic8 Lite",
+  "short_name": "Magic Cam Pro",
+  "description": "Cámara profesional IA para HONOR Magic8 Lite con MagicOS 10, controles manuales reales, RAW DNG 108MP y monitores cinemáticos.",
+  "start_url": "/",
+  "id": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "categories": ["photo", "video", "productivity"],
+  "icons": [
+    {
+      "src": "/icon-192.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Modo Pro Manual",
+      "short_name": "Pro Manual",
+      "description": "Abrir directamente en modo Pro con controles ISO/Obturador",
+      "url": "/?mode=pro",
+      "icons": [{ "src": "/icon-192.svg", "sizes": "192x192" }]
+    },
+    {
+      "name": "Sensor 108 MP",
+      "short_name": "108 MP",
+      "description": "Captura en máxima resolución 108 Megapíxeles",
+      "url": "/?mode=108mp",
+      "icons": [{ "src": "/icon-192.svg", "sizes": "192x192" }]
+    },
+    {
+      "name": "Grabación de Vídeo",
+      "short_name": "Vídeo 4K",
+      "description": "Grabar vídeo en alta definición",
+      "url": "/?mode=video",
+      "icons": [{ "src": "/icon-192.svg", "sizes": "192x192" }]
+    }
+  ]
+}
